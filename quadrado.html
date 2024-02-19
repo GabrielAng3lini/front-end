@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas geometricas</title>
+<style>
+        #quadrado{
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        }
+        .retangulo{
+            width:300px ;
+            height:100px ;
+            background-color: red;
+        }
+        .circulo{
+            width:100px ;
+            height:100px ;
+            background-color: blue;
+            border-radius: 50% ;
+        }
+        .triangulo{
+            width:0;
+            height:0;
+            border-left:45px solid transparent;
+            border-right:45px solid transparent;
+            border-bottom:100px solid palegoldenrod;
+        }
+        .triangulo2{
+            width:0;
+            height:0;
+            border-top:40px solid transparent;
+            border-bottom:40px solid transparent;
+            border-left:80px solid purple;
+        }
+     
+</style>
+</head>
+<body>
+    <h1>quadrado</h1>
+    <p>São formas fáceis de desenhar</p>
+    <p><strong>width:</strong>define a lagura</p>
+    <p><strong>height:</strong>define a altura</p>
+    <div id="quadrado"></div>
+
+    <h1>retangulo</h1>
+    <div class="retangulo"></div>
+    
+    <h1>circulo</h1>
+    <div class="circulo"></div>
+    <p>Para definir um circulo usamos <strong>border-radius </strong>do elemento</p>
+    <p>isso criará campos curvados no elemento</p>
+    <p>se definirmos<strong> 50% </strong>criamos um circulo</p>
+  
+
+    <h1>triangulo</h1>
+    <p>triangulos são um pouco mais complicados</p>
+    <p>temos que definir as bordas do elemento,o width real do elemento será a borda</p>
+    <p>Lembre-se que os cantos das bordas de um elemento são diagonaisde 45 graus</p>
+    <div class="triangulo"></div>
+
+    <h1>triangulo</h1>
+    <div class="triangulo2"></div>
+
+
+
+</body>
+</html>
