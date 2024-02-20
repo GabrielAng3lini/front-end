@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas em texto </title>
+    <style>
+   
+
+
+    @keyframes RODA_RODA_JEQTI {
+  0%   {background-color:brown; left:25px; top:2px;}
+  25%  {background-color:brown; left:32px; right:46px;top:6px;}
+  50%  {background-color:brown; left:22px; top:12px;}
+  75%  {background-color:brown; left:50px; bottom:120px;right:52px;}
+  100% {background-color:brown; left:0px; top:0px;}
+    }
+     @keyframes Pisca_fofo {
+  0%   {background-color: black}
+  25%  {background-color: white;}
+  50%  {background-color: black;}
+  100% {background-color: white;}
+    }
+
+    #quadrado{
+    animation-name: Pisca_fofo;
+    animation-duration: 4s;
+    float: left;
+    width: 100px;
+    height:100px;
+    shape-outside: Insert(10px 5px 30px 10px);
+    }
+   .circulocortado{ 
+        float: left;
+        width: 300px;;
+        height: 300px;;
+        margin:6px;
+        border-radius: 50%;
+        shape-outside: circle(50%at 50%);
+        clip-path:circle(50% at 0);
+    }
+    #ellipse{
+    animation-name: RODA_RODA_JEQTI;
+    animation-duration: 12s;
+    animation-direction: reverse;
+    position: relative;
+    float:left;
+    width:150px;
+    height:150px;
+    margin:20px;
+    shape-outside:ellipse(40%,50%);
+    clip-path:ellipse(40% 50%);
+    background-color: brown;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">Shape-outside</h1>
+    <p>Essa propiedade permite que você defina uma forma para que o texto se envolve e flua ao seu redor</p>
+    <p>Junta a essa propriedade temos algumas formas básicas</p>
+    <p>O elemento que vamos aplicar a forma com a propriedades <strong>Shape-outside </strong>precisa ter a propiedade <strong>Float</strong></p>
+    <ul>
+        <li>Insert()</li>
+        <li>Circle()</li>
+        <li>Ellipse()</li>
+        <li>Polygon()</li>
+    </ul>
+     <h2 style="color:green">Insert</h2>
+     <p>Pode ser usado para criar um retangulo ou quadrado com um deslocamento opcional para o texto que o envolver</p>
+     <div id="quadrado"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?</p>
+     <h2>Circle()</h2>
+     <p>O circulo é criado usando a propriedade<strong> shape-outside</strong></p>
+     <p>Pode ser aplicado um <strong>clip-path </strong>pode receber a mesma propriedade
+     <strong>shape-outside </strong>para dar a ela a forma padrão de <strong>para dar a ela a forma padrão de</strong>
+     <strong>circle()</strong></p>
+     <div class="circulocortado"></div>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis.
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis.</p>
+
+     <hr>
+     <h2>Ellipse()</h2>
+     <p>Funcionam da mesma forma que os círculos, exceto pelo fato de criar uma oval</p>
+     <p>Pode definir os valores x e y assim <strong>ellipse(25px 50px)</strong></p>
+     <div id="ellipse"></div>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate est rerum, inventore quaerat voluptas sit placeat? Modi natus delectus nostrum cupiditate corporis iure odit cum cumque? Velit, aspernatur debitis
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur qui delectus veritatis cum corporis saepe earum possimus nostrum facilis! Debitis, officiis officia? Eligendi provident iure eaque nemo unde corporis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt quo? Aspernatur sequi dolore debitis. Laudantium reiciendis atque ut eos eveniet veniam rerum mollitia debitis, quibusdam voluptatum vitae dicta repellat!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta necessitatibus hic nihil. Facilis, labore, cumque illo error, possimus quo doloremque voluptatem enim ea architecto mollitia quasi ab harum sint?</p>
+</body>
+</html>

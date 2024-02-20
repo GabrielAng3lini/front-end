@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RODINHAS</title>
+</head>
+<style>
+body{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: lightblue
+}
+.roda{
+    position: relative;
+    width:100px;
+    height:100px;
+    animation: girar 2s linear infinite;
+}
+.pneu{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+}
+.calota{
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height:50%;
+    background-color: silver;
+    border-radius: 50%;
+}
+@keyframes girar{
+ from{
+       transform: rotate(0deg);
+ }
+ to{
+    transform:rotate(360deg);
+ }
+}
+.ponto{
+    position:absolute;
+    top: 10%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+    background-color: white;
+    border-radius: 50%;
+}
+</style>
+<body>
+    <div class="roda"><div class="pneu"><div class="calota"><div class="ponto"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carro</title>
+    <style>
+body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: lightgrey;
+}
+.carro{
+    position: relative;
+    animation-name:mover;
+    animation-duration: 4s;
+    linear infinite;}
+.corpo{
+    width: 200px;
+    height: 100px;
+    background-color:lightblue;
+    border-radius: 20px;
+}
+.roda{
+   
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;}
+#roda1{
+    left: 20px;
+}
+#roda2{
+   right: 20px;
+}
+@keyframes mover{
+0% {transform: translateX(0);}
+100%{transform:translateX(100vw);}
+}
+
+</style>
+</head>
+<body>
+<div class="carro">
+<div class="corpo"></div>
+<div class="roda" id="roda1"></div>
+<div class="roda" id="roda2"></div></div>
+</body>
+</html>
