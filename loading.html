@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          
+    }
+    .carregando{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        border-radius: 50%;
+        border-top: 16px solid silver;
+        border: 16px solid whitesmoke;
+        animation:carregando 5s linear infinite;
+        shape-outside: circle(5% at 5%);
+        clip-path: circle(5% at 0);
+    }
+    @keyframes carregando {
+        from{transform:rotate(0deg);}
+        to{transform: rotate(360deg);}
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="carregando"></div>
+</body>
+</html>

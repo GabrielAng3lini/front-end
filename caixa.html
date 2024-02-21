@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixa que pula</title>
+    <style>
+         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(94, 199, 202);
+        }
+        .caixa_pulando{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(138, 143, 153);
+            position: relative;
+            animation: pulo 3s linear infinite;
+        }
+        @keyframes pulo{
+            0%, 100%{left: 0;}
+            50%{right: -90px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa_pulando"></div>
+</body>
+</html>
