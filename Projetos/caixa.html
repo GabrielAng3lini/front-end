@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,22 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: rgb(94, 199, 202);
+            background-color: beige;
+            margin:0;
         }
         .caixa_pulando{
-            width: 200px;
-            height: 200px;
-            background-color: rgb(138, 143, 153);
-            position: relative;
-            animation: pulo 3s linear infinite;
+            width:200px;
+            height:200px;
+            background-color:rgb(114, 71, 0);
+            position:relative;
+            animation-name:pulo;
+            animation-duration:1s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
         }
-        @keyframes pulo{
-            0%, 100%{left: 0;}
-            50%{right: -90px;}
+       @keyframes pulo{
+            0%,100%{bottom:0;}
+            50%{bottom: 50px;}
         }
     </style>
 </head>
