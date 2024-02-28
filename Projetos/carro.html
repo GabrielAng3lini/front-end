@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,11 @@ body{
 }
 .carro{
     position: relative;
-    animation-name:mover;
-    animation-duration: 4s linear infinite;}
+    animation-name:andar;
+    animation-duration:4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 .corpo{
     width: 200px;
     height: 100px;
@@ -35,17 +38,17 @@ body{
 #roda2{
    right: 20px;
 }
-@keyframes mover{
-0% {transform: translateX(0);}
+@keyframes andar{
+0%{transform:translateX(0);}
 100%{transform:translateX(100vw);}
 }
-
 </style>
 </head>
 <body>
 <div class="carro">
 <div class="corpo"></div>
 <div class="roda" id="roda1"></div>
-<div class="roda" id="roda2"></div></div>
+<div class="roda" id="roda2"></div>
+</div>
 </body>
 </html>
