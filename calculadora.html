@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/estilo.css"><!--Ligando o arquivo CSS ao HTML-->
+    <link rel="stylesheet" href="Css/estilo.css"></link><!--Ligando o arquivo CSS ao HTML-->
     <title>Calculadora - IMC</title>
 </head>
 <body>
     <section class="container">
         <h1>Calculadora IMC</h1>
-        <form action="formulario"><!---Estou criando um formulario-->
+        <form>
             <label for="peso" name="peso" id="peso">Peso</label>
             <input type="text" id="peso">
             <label for="altura" name="altura" id="altura">Altura</label>
             <input type="text" id="peso">
             <button type="submit">Enviar</button>
+            <label for="resultado" name="resultado" id="resultado">Resultado</label> 
+            <div id="resultado"></div>
         </form>
     </section>
 </body>
