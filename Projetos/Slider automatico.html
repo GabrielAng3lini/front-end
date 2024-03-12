@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Automático</title>
+    <style>
+        .MeuSlide{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+        <img src="../Imagens/1.jpg" alt="" class="meuSlide"><img/>
+        <img src="../Imagens/2.jpg" alt="" class="meuSlide"><img/>
+        <img src="../Imagens/3.jpg" alt="" class="meuSlide"><img/>
+    </div>
+    <script>
+        var slideIndex = 0;
+        carrossel();
+        
+        function carrossel() {
+            var i; 
+            var x = document.getElementsByClassName("meuSlide");
+       
+     
+      
+          for(i = 0; i < x.length; i++){
+            x[i].style.display = "none"
+          }
+          slideIndex++;
+          if(slideIndex > x.length){
+            slideIndex = 1;}
+          
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carrossel, 3000);
+        }
+      </script>
+</body>
+</html>
