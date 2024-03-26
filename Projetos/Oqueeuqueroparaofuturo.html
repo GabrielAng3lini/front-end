@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 2: O que eu quero para o futuro</title>
+</head>
+<style>
+    *{
+         margin: 0;
+         box-sizing: border-box;
+    }
+        .posicionamentoimg{
+        position: relative;
+    } 
+    body{
+         background: linear-gradient(-90deg,#757575 , #B5B7BB, #A8A9AD, #AFB1AE);
+    }
+    h3,h1,li,div{
+        color:white;
+    }
+    .corbranca{
+        color: white;
+    }
+    #button1{
+    padding: 10px 20px;
+    border-radius: 50px 30px ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #757575;
+    }
+    button{
+    color: white;
+    width: 975px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    left: 500px;
+    }
+    </style>
+    <body>
+    <button id="button1" style="background-color: #757575;">Retornar a página inicial</button>
+    <script>
+        document.getElementById("button1").onclick = function () {
+              location.href = "Finalizacão.html";
+          };
+      </script>
+      <script>
+        const button= document.querySelector(".button");
+        button.addEventListener("mouseover", function() {
+        button.style.backgroundColor = "red";
+        });
+        
+        button.addEventListener("mouseout", function() {
+            button.style.backgroundColor = "";
+        });
+        </script>
+</body>
+</html>

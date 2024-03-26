@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SESIInvestidores.com.br</title>
+    <title>InvesteSesiPR</title>
     <style>
 *{
  margin: 0;
@@ -67,6 +67,7 @@ h3,h1,li,div{
      margin-bottom: 10px;
      background: #11114E;
      border-radius: 10px;
+     border: 4px solid black;
 }
 
 .abrir_pergunta{
@@ -105,6 +106,54 @@ h3,h1,li,div{
 
 .abrir.ativo .abrir_resposta {
     display: block;
+}
+.campoprjdevida{
+    width: 1000px;
+    height: 380px;
+    background-color:  #11114E;
+    border-radius: 20px;
+    margin: auto;
+    border: 4px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#button1{
+    padding: 10px 20px;
+    border-radius: 50px 30px ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #003777;
+  
+}
+#button2{
+    padding: 10px 20px;
+    border-radius: 50px 30px ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #003777;
+  
+}
+#button3{
+    padding: 10px 20px;
+    border-radius: 50px 30px ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #003777;
+  
+}
+#button4{
+    padding: 10px 20px;
+    border-radius: 50px 30px ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #003777;
+  
+}
+button{
+    color: white;
+    width: 975px;
+    cursor: pointer;
 }
 
     </style>
@@ -254,9 +303,42 @@ h3,h1,li,div{
         </div>
     </div>
 </div>
+<br><br>
+<p class="corbranca">Agora que você sabe tudo sobre os principais investimentos você vai realizar uma consulta abaixo de seu projeto de vida:</p>
+<br><br>
+<div class="campoprjdevida"><h1 class="corbranca" style="text-align: center;">Projeto de Vida</h1>
+    <button id="button1" style="background-color: #003777;">Autoconhecimento</button>
+    <br><br>
+    <button id="button2" style="background-color: #003777;">O que eu quero para o futuro?</button>
+    <br><br>
+    <button id="button3"  style="background-color: #003777;">Tomada de decisões</button>
+    <br><br>
+    <button id="button4"  style="background-color: #003777;">Planejando minha ações</button>
+    <br><br>
+</div>
  <footer>
     <strong><p  style="margin:2px;" style="font-size: xx-small;">Publicado em 19/03/2024: Finalização.Todos os direitos reservados.</p></strong>
     </footer>
+<script>
+  document.getElementById("button1").onclick = function () {
+        location.href = "Autoconhecimento.html";
+    };
+</script>
+<script>
+    document.getElementById("button2").onclick = function () {
+          location.href = "Oqueeuqueroparaofuturo.html";
+      };
+  </script>
+  <script>
+    document.getElementById("button3").onclick = function () {
+          location.href = "Tomadadedecisões.html";
+      };
+  </script>
+  <script>
+    document.getElementById("button4").onclick = function () {
+          location.href = "Planejandominhasações.html";
+      };
+  </script>
 <script>
     let resposta = document.querySelectorAll(".abrir");
     resposta.forEach((event) => {
@@ -271,6 +353,16 @@ h3,h1,li,div{
             }
         });
     });
+</script>
+<script>
+const button= document.querySelector(".button");
+button.addEventListener("mouseover", function() {
+button.style.backgroundColor = "red";
+});
+
+button.addEventListener("mouseout", function() {
+    button.style.backgroundColor = "";
+});
 </script>
 
 </body>
